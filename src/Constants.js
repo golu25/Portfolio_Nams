@@ -10,21 +10,21 @@ export const PROJECTS = [
     name: "Angular Quiz",
     technologyUsed: "Angular, Typescript",
     description: "Quiz App where any user can give test and analyse the performance by viewing result.",
-    url: " ",
+    url: "https://github.com/golu25/Quiz",
   },
   {
     image: TRAVELWELL,
     name: "Daily Plan",
     technologyUsed: "React, Javascript.",
     description: "Daily Plan is a website where user can add or delete their Daily Todo's Plan.",
-    url: " ",
+    url: "https://github.com/golu25/plan",
   },
   {
     image: HSP,
     name: "Book Corner",
     technologyUsed: "Angular, Typescript, Postgresql",
     description: "Book Corner is a website from where user can take any book and add to cart or buy books.",
-    url: " ",
+    url: "https://github.com/golu25/Book-Corner",
   },
   
 ];

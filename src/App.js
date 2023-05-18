@@ -6,7 +6,8 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import {Route,Routes} from "react-router-dom"
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -30,16 +31,16 @@ function App() {
       {load ? (
         <Preloader load={load} />
       ) : (
-        <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <div className="App">
           <Navbar />
           <ScrollToTop />
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/project" component={Projects} />
-            <Route path="/about" component={About} />
-            <Route path="/resume" component={Resume} />
-            <Route path="/experience" component={Experience} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/project" element={<Projects/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/resume" element={<Resume/>} />
+            <Route path="/experience" element={<Experience/>} />
+          </Routes>
           <Footer />
         </div>
       )}

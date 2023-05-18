@@ -1,8 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/Nams_pass_photo.jpeg";
-import SocialMedia from "../SocialMedia";
+import myImg from "../../Assets/Nam_pass_photo.jpeg";
+import About from "../About/About";
+import Projects from "../Projects/Projects";
 import TypeWriter from "./TypeWriter";
+import Experience from "../Experience/Experience";
 
 function Home() {
   return (
@@ -38,23 +40,14 @@ function Home() {
             </Col>
           </Row>
         </Container>
-      </Container>
-      <Container fluid className="home-about-section" id="about">
-        <Container>
-          <Row>
-            <Col md={12} className="home-about-social">
-              <h1>Get in Touch</h1>
-              <p>
-                {" "}
-                Whether you want to get in touch
-                <br />
-                <strong>Feel free to connect with me</strong>
-              </p>
-              <SocialMedia />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
+      </Container> 
+              <About/>
+              <Projects/>
+              <Experience/>
+            
+          
+        
+      
     </section>
   );
 }
